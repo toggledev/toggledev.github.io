@@ -1,0 +1,35 @@
+#welcome-section {
+	background-color: #87c541;
+	color: white;
+	font-weight: bold;
+}
+
+#startup-office-image {
+	height: 325px;
+}
+
+@media (min-width: 992px) {
+	#about-section > .container .switchable__text {
+		margin-top: 4em;
+	}
+}
+
+@media (min-width: 1200px) {
+	#about-section > .container .switchable__text {
+		margin-top: 6em;
+	}
+}
+
+@media(max-width: 560px) {
+	#about-section {
+		padding-bottom: 0; 
+	}
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+
+#menu1 .menu-horizontal {
+	margin-top: 5px;
+}
