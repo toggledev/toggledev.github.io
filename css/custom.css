@@ -8,9 +8,19 @@
 	height: 325px;
 }
 
+#about-section > .container .switchable__text {
+	margin-top: 0;
+}
+
 @media (min-width: 992px) {
 	#about-section > .container .switchable__text {
 		margin-top: 4em;
+	}
+}
+
+@media (min-width: 1025px) {
+	#about-section > .container .switchable__text {
+		margin-top: 1em;
 	}
 }
 
@@ -30,6 +40,41 @@
 	margin-bottom: 50px;
 }
 
+.margin-bottom-100 {
+	margin-bottom: 100px;
+}
+
 #menu1 .menu-horizontal {
 	margin-top: 5px;
+}
+
+#services-intro {
+	margin-top: 100px;
+}
+
+#about-portfolio {
+	margin-top: 150px;
+}
+
+.service-individual-content {
+	margin-top: 3.8em;
+}
+
+@media (min-width: 768px) {
+	.service-individual-content {
+		margin-top: -2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.service-individual-content {
+		margin-top: 0;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.service-individual-content {
+		margin-top: 3.8em;
+	}
 }

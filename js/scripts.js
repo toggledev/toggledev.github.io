@@ -1173,3 +1173,45 @@ mr = (function (mr, $, window, document){
     return mr;
 
 }(mr, jQuery, window, document));
+
+//////////////// formspree.io Form Submission + Validation
+$(window).on('load', function () {
+    $( "#contact-form" ).validate({
+      rules: {
+        name: {
+          required: true
+        },
+        _replyto: {
+          required: true,
+          email: true
+        },
+        message: {
+            required: true
+        }
+      },
+        submitHandler: function(form) {
+            var form = $("#contact-form"); // contact form
+            var submitButton = $("#contact-form-submit");  // submit button
+            var response = $('#contact-form-response'); // alert div for show alert message
+            $.ajax({
+                // url: "https://formspree.io/testemail@test.com", //local
+                url: "https://formspree.io/info@toggledev.com", //live
+                method: "POST",
+                data:  $("#contact-form").serialize(),
+                dataType: "json",
+
+                beforeSend: function() {
+                    response.text('Sending...'); // change response text
+                },
+                success: function(data) {      
+                    response.html('Message sent').fadeIn(); // fade in response data
+                    form.trigger('reset'); // reset form
+                },
+                error: function(e) {
+                    console.log(e);
+                    response.text('There was an error!'); // change response text
+                }
+            }); 
+        }
+    });
+})

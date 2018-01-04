@@ -1039,6 +1039,16 @@ div[data-overlay] ul {
   right: 3.71428571em;
   z-index: 10;
 }
+.btn--orange {
+  background: #F09B00;
+  border-color: #F09B00 !important;
+}
+.btn--orange:hover {
+  background: #FFA500;
+}
+.btn--orange:active {
+  background: #FFA500;
+}
 /**! 07. Icons **/
 .icon {
   line-height: 1em;

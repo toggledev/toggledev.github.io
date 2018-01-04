@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Toggle Development">
         <meta name="theme-color" content="#ffffff">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/favicons/manifest.json">
-        <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/manifest.json">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
@@ -23,15 +23,15 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body class=" ">
+    <body>
         <a id="start"></a>
-        <div class="nav-container ">
+        <div class="nav-container">
             <div class="bar bar--sm visible-xs">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-3 col-sm-4">
                             <a href="index.html">
-                                <img class="logo logo-dark" alt="logo" src="img/logo.png" />
+                                <img class="logo logo-dark" alt="logo" src="img/logo.png" data-retina="assets/img/logo@2x.png" data-width="146" data-height="47"/>
                             </a>
                         </div>
                         <div class="col-xs-9 col-sm-8 text-right">
@@ -45,7 +45,7 @@
                 <!--end of container-->
             </div>
             <!--end bar-->
-            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4 hidden-xs">
@@ -60,10 +60,13 @@
                             <div class="bar__module">
                                 <ul class="menu-horizontal">
                                     <li class="dropdown">
+                                        <a href="#services-section">Services</a>
+                                    </li>
+                                    <li class="dropdown">
                                         <a href="#about-section">About</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#content-section">Contact</a>
+                                        <a href="#contact-section">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -90,10 +93,15 @@
             <section id="welcome-section" class="cover height-80 text-center">
                 <div class="container pos-vertical-center">
                     <div class="row">
-                        <div class="col-12 col-md-10">
-                            <h1 class="type--bold">Software Product Strategy,</h1>
-                            <h1 class="type--bold">Full-Stack Web Development.</h1>
-                            <h2>Forged in Silicon Valley, Based in Seattle</h2>
+                        <div class="col-lg-9">
+                            <h1 class="type--bold">We Build Custom Websites and Software for Real Estate Companies.</h1>
+                            <h1 class="type--bold"></h1>
+                            <h2>Full-Service Web and Software Development.</h2>
+                            <a class="btn btn--sm btn--orange" href="#contact-section">
+                                <span class="color--white type--bold">
+                                    Contact Us
+                                </span>
+                            </a>
                             <!--end of modal instance-->
                         </div>
                     </div>
@@ -102,25 +110,91 @@
                 <!--end of container-->
             </section>
             <section class="cta cta-4 space--xxs unpad--bottom">
-                <div class="container">
+                <div id="services-intro" class="container">
                     <div class="row">
                         <div class="col-sm-12 text-center">
-                            <hr>
-                            <span>Toggle Development is a web development agency based in Seattle, WA. We help small businesses with everything web and software related.</span>
+                            <h3>Toggle Development is a web development agency based in Seattle, WA. We specialize in helping businesses in the real estate industry with everything web and software related.</h3>
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
             </section>
+            <section id="services-section" class="switchable feature-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="Image" class="border--round box-shadow-wide"
+                                    src="img/services/web.jpg" />
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <div class="service-individual-content">
+                                <h2>Web Development</h2>
+                                <p class="lead">
+                                    We’re a full-service shop, meaning we’ll help you from initial ideation and design through the front and back-end development. All of our websites are mobile friendly, responsive and SEO optimized.
+                                </p>
+                                <a href="#contact-section">Contact Us for More Info &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="Image" class="border--round box-shadow-wide"
+                                    src="img/services/software.png" />
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <div class="service-individual-content">
+                                <h2>Custom Software Development &amp; Integration</h2>
+                                <p class="lead">
+                                    We can help with most custom software projects. Anything from a CRM integration to a sophisticated back-end application.
+                                </p>
+                                <a href="#contact-section">Contact Us for More Info &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="switchable feature-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="Image" class="border--round box-shadow-wide"
+                                    src="img/services/strategy.png" />
+                        </div>
+                        <div class="col-sm-6 col-md-5">
+                            <div class="service-individual-content">
+                                <h2>Web &amp; Software Strategy Consulting</h2>
+                                <p class="lead">
+                                    Looking for direction with a website or software project? We’re happy to help you understand all that’s involved, and how to best approach it.
+                                </p>
+                                <a href="#contact-section">Contact Us for More Info &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
             <section id="about-section" class="switchable feature-large margin-bottom-50">
                 <div class="container">
+
+                    <hr class="margin-bottom-100">
+
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="switchable__text">
-                                <h2>Helping Startups and SMBs</h2>
+                                <h2>Experience with Industry Leaders</h2>
                                 <p class="lead">
-                                    For the past 5 years, Toggle Development founder, Patrick Ellis, has worked with tech startups in both Silicon Valley and Seattle, helping them build the next generation of web and software solutions. 
+                                    Over the past five years, Toggle Development founder, <a href="https://www.linkedin.com/in/patrickoakleyellis/">Patrick Ellis</a>, has worked with technology companies in both Silicon Valley and the Seattle area, helping them build the next generation of web and software solutions.
                                 </p>
                             </div>
                         </div>
@@ -133,22 +207,45 @@
                     <!--end of row-->
                 </div>
                 <!--end of container-->
+
+
+
+                <!-- PORTFOLIO SECTION
+                <div id="about-portfolio" class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3>Interested in seeing our past work?<br>View our portfolio for examples from past projects.</h3>
+                            <a class="btn btn--sm btn--primary" href="#">
+                                <span class="color--white type--bold">
+                                    View Our Portfolio
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+
+
+
+
+                <!--end of container-->
             </section>
-            <section id="content-section" class="text-center bg--secondary">
+
+            <section id="contact-section" class="text-center bg--secondary">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <h2>
-                                Have a project in mind?<br>We'd be happy to point you in the right direction.
+                                Have a project in mind?<br>We're happy to point you in the right direction.
                             </h2>
                             <h5>
-                                Shoot us an email at <a href="mailto:into@toggledev.com">info@toggledev.com</a>, or use the form below.
+                                Email us at <a href="mailto:into@toggledev.com">info@toggledev.com</a>, or use the form below.
                             <h5>
                             <div class="col-sm-6 col-xs-12 col-sm-offset-3">
                                 <div class="row">
                                     <form 
-                                            action="https://formspree.io/info@toggledev.com"
-                                            method="POST"
+                                            id="contact-form"
                                             class="form-email"
                                             data-success="Thanks! We'll be in touch shortly."
                                             data-error="Please make sure all fields are correct.">
@@ -166,27 +263,10 @@
                                         </div>
                                         <input type="hidden" name="_subject" value="Toggledev.com form submission!">
                                         <div class="col-12">
-                                            <input type="submit" value="Send">
+                                            <input type="submit" value="Send" id="contact-form-submit">
                                         </div>
+                                        <div id="contact-form-response" class="col-12"></div>
                                     </form>
-                                    <!--
-                                    <form class="form-email text-left" data-success="Thanks! We'll be in touch shortly." data-error="Please fill in all fields correctly.">
-                                        <div class="col-sm-6 col-xs-12">
-                                            <label>Name:</label>
-                                            <input type="text" name="Name" class="validate-required" />
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12">
-                                            <label>Email:</label>
-                                            <input type="email" name="email" class="validate-required validate-email" />
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12">
-                                            <label>Message:</label>
-                                            <textarea rows="4" name="Message" class="validate-required"></textarea>
-                                        </div>
-                                        <div class="col-sm-5 col-md-4 col-xs-6">
-                                            <button type="submit" class="btn btn--primary type--uppercase">Send</button>
-                                        </div>
-                                    </form>-->
                                 </div>
                                 <!--end of row-->
                             </div>
@@ -274,6 +354,7 @@
         <script src="js/isotope.min.js"></script>
         <script src="js/granim.min.js"></script>
         <script src="js/jquery.steps.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/countdown.min.js"></script>
         <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
