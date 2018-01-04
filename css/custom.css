@@ -45,11 +45,17 @@
 }
 
 #menu1 .menu-horizontal {
-	margin-top: 5px;
-	margin-bottom: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 120%;
+	margin-top: 3px;
+	font-size: 110%;
+}
+
+@media (max-width: 767px) {
+	#menu1 .menu-horizontal {
+		margin-bottom: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 120%;
+	}
 }
 
 #services-intro {
