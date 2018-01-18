@@ -962,10 +962,10 @@ div[data-overlay] ul {
   color: #fff;
 }
 .btn--primary:hover {
-  background: #d5e59d;
+  background: #9ae14a;
 }
 .btn--primary:active {
-  background: #3483de;
+  background: #9ae14a;
 }
 .btn--primary-1,
 .btn--primary-1:visited {
@@ -6444,7 +6444,7 @@ a.block:hover > .feature {
   margin: 1.57575757575758em 0;
 }
 .cta-2.bg--primary:hover {
-  background: #d5e59d;
+  background: #9ae14a;
 }
 .cta-2:hover {
   background: #ffffff;

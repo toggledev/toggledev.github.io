@@ -4,6 +4,13 @@
 	font-weight: bold;
 }
 
+@media (min-width: 768px) {
+	#welcome-section {
+		background-image: url("../img/bg.jpg");
+		background-repeat: repeat;
+	}
+}
+
 #startup-office-image {
 	height: 325px;
 }
@@ -87,4 +94,24 @@
 	.service-individual-content {
 		margin-top: 3.8em;
 	}
+}
+
+#portfolio-header-image {
+	max-height: 400px;
+}
+
+#portfolio-header-image .background-image-holder {
+	background: url("../img/startup-office-lg.jpg");
+	opacity: 1;
+}
+
+#portfolio-past-work .row:not(:first-child) {
+	margin-top: 25px;
+}
+
+#portfolio-past-work .portfolio-technologies {
+	font-size: 85%;
+    border-top: 1px #eeeeee solid;
+    margin-top: 10px;
+    padding-top: 8px;
 }
