@@ -11,6 +11,11 @@
 	}
 }
 
+#welcome-section .btn--lg {
+	font-size: 120%;
+    padding: 5px 30px;
+}
+
 #startup-office-image {
 	height: 325px;
 }

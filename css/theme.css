@@ -1049,6 +1049,17 @@ div[data-overlay] ul {
 .btn--orange:active {
   background: #FFA500;
 }
+.btn--white-outline {
+  background: #87C541;
+  border: 2px #FFFFFF solid;
+}
+.btn--white-outline:hover {
+  background: #9AE14A;
+  border-color: #FFFFFF;
+}
+.btn--white-outline:active {
+  background: #87C541;
+}
 /**! 07. Icons **/
 .icon {
   line-height: 1em;
@@ -4414,10 +4425,10 @@ hr[data-title]:before {
 .btn {
   position: relative;
 }
-.btn:not([class*='primary']) {
+.btn:not([class*='primary'], [class*='white-outline']) {
   border-color: #d3d3d3;
 }
-.btn:not([class*='primary']):hover {
+.btn:not([class*='primary'], [class*='white-outline']):hover {
   border-color: #252525;
 }
 .btn.type--uppercase {
