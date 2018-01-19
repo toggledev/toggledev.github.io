@@ -37,12 +37,6 @@
 	}
 }
 
-@media(max-width: 560px) {
-	#about-section {
-		padding-bottom: 0; 
-	}
-}
-
 .margin-bottom-50 {
 	margin-bottom: 50px;
 }
@@ -71,6 +65,12 @@
 
 #about-portfolio {
 	margin-top: 150px;
+}
+
+@media(max-width: 560px) {
+	#about-portfolio {
+		margin-top: 100px;
+	}
 }
 
 .service-individual-content {
