@@ -1052,6 +1052,8 @@ div[data-overlay] ul {
 .btn--white-outline {
   background: #87C541;
   border: 2px #FFFFFF solid;
+  font-size: 120%;
+  padding: 5px 30px;
 }
 .btn--white-outline:hover {
   background: #9AE14A;
@@ -5806,7 +5808,7 @@ a.feature img:first-child:not(:last-child) {
 section.text-center .feature-6 h4 + p {
   margin: 0 auto;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .row div[class*='col-']:nth-child(1):nth-last-child(3) .feature,
   .row div[class*='col-']:nth-child(2):nth-last-child(2) .feature,
   .row div[class*='col-']:nth-child(3):last-child .feature {
@@ -7158,7 +7160,7 @@ input[type="submit"] {
 }
 button.btn,
 input[type="submit"].btn {
-  font-size: 0.85714286em;
+  font-size: 1.07142857em;
   font-weight: 700;
   padding-left: 0;
   padding-right: 0;
