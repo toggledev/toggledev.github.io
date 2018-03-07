@@ -160,11 +160,6 @@
 	}
 }
 
-#portfolio .green-background-feature h2 {
-	font-weight: bold;
-	margin: 0;
-}
-
 #portfolio-header-image {
 	max-height: 400px;
 }
@@ -193,3 +188,16 @@
     padding-top: 8px;
     margin-left: 4px;
 }
+
+#portfolio-walkthrough h2 {
+	margin-bottom: 50px;
+}
+
+#portfolio-walkthrough-video {
+	text-align: center;
+}
+
+#portfolio-walkthrough-video iframe {
+	max-width: 640px;
+}
+
